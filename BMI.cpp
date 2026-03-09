@@ -12,7 +12,7 @@ void input(float &berat, float &tinggi) {
 }
 
 //bmi
-float bmi(float berat, float tinggi){
+float hitbmi(float berat, float tinggi){
     return berat / (tinggi * tinggi);
 }
 
@@ -26,4 +26,19 @@ string statusbmi(float bmi) {
         return "Berat Badan Kelebihan";
     else
         return "Obesitas";
+}
+
+//program utama
+int main() {
+    float berat, tinggi, bmi;
+
+    cout << "--- Selamat Datang Mahasiswa Kelas A 2025 ---" << endl;
+
+    input(berat, tinggi);
+
+    bmi = hitbmi(berat, tinggi);
+
+    cout << "\n--- Hasil ---" << endl;
+    cout << "BMI Anda : " << bmi << endl;
+    cout << "Status   : " << statusbmi(bmi) << endl;
 }
