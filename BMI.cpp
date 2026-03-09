@@ -11,7 +11,7 @@ void input(float &berat, float &tinggi) {
     cin >> tinggi;
 }
 
-//bmi
+//hitungbmi
 float hitbmi(float berat, float tinggi){
     return berat / (tinggi * tinggi);
 }
@@ -39,7 +39,7 @@ int main() {
     bmi = hitbmi(berat, tinggi);
 
     //hasil
-    cout << "\n--- Hasil ---" << endl;
+    cout << "--- Hasil ---" << endl;
     cout << "BMI Anda : " << bmi << endl;
     cout << "Status   : " << statusbmi(bmi) << endl;
 }
